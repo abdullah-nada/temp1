@@ -1,0 +1,784 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:6000px;
+}
+
+header{
+    width: 100%;
+    height: 55px;
+    background:#333;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo h2 a{
+    float: left;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 2s;
+}
+
+h2 a:hover{
+    color: rgb(21, 196, 196);
+}
+
+.lst li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul{
+    float: right;
+    margin-top: 11px;
+}
+
+.lst ul li a{
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    transition: 1s;
+    position: relative;
+}
+
+.lst ul li a:hover{
+    color: rgb(21, 196, 196);
+}
+
+.lst ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: aqua;
+    transition: width 0.3s ease;
+
+}
+.lst ul li a:hover::after{
+    width: 100%;
+}
+/* ----------------------------------------------------------- */
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+}
+.over_lay{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.content{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    /* background-color:red; */
+}
+.content .self1_p{
+    font-size:20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.content .self2_p{
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+.botton_header button{
+    padding: 4px 2px;
+    border-radius: 10px;
+   background-color: aqua;
+}
+.botton_header a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+   
+}
+
+/* --------------------------------------------------------------------- */
+
+.title_service{
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: 25px;
+}
+
+.draw_line_service{
+    width: 80px;
+    border-bottom: 2px solid blue;
+    margin: auto;
+}
+
+.container3{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.parent_service{
+ overflow: auto;
+}
+.go{
+    margin: 0px 5%;
+}
+
+.lst_service{
+    float: left;
+    width: 30%;
+    height: 180px;
+    background-color:#333;
+    color: #fff;
+    border: 1px solid blue;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.web_icons{
+    font-size: 20px;
+    color: blue;
+}
+
+.web_info h2{
+    font-size:20px;
+    text-transform: capitalize;
+}
+
+.web_info p{
+    font-size: 18px;
+    text-transform: lowercase  ;
+    font-style: italic;
+}
+.web_info a{
+     text-decoration: none;
+     color: blue;
+}
+
+.lst_service:after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(70, 160, 160);
+    transition: 2s;
+    opacity: 0.7;
+}
+.lst_service:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------------------------------- */
+
+.img_project.img{
+    width: 180 px;
+    height: 200 px;
+}
+
+.go_project{
+    margin: 0px 5%;
+}
+
+.iteam_project{
+    float: left;
+    width: 30%;
+    padding: 18px 14px;
+    text-align: center;
+}
+.img_project{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.img_project.img{
+    width: 100%;
+}
+
+.icons_project{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 30px;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s;
+}
+.iteam_project:hover .icons_project{
+    visibility: visible;
+    opacity: 1;
+
+}
+.project_title{
+    color: #fff;
+    font-size: 20px;
+}
+.project_title:hover{
+    color: red;
+}
+.project_p{
+    color: rgb(12, 134, 134);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.iconss{
+    color: blue;
+    font-size: 25px;
+}
+
+
+
+/* --------------------------------------------- */
+
+ .offer_iteam{
+    float: left;
+    height: 180px;
+    width: 30%;
+    background-color: #333;
+    padding: 20px 20px;
+    margin-top:40px;
+    position: relative;
+    color:#fff;
+}
+
+.offer_parent{
+    overflow: auto;
+    position: relative;
+}
+
+.space1{
+   margin: 0px 5%;
+   margin-top: 40px;
+}
+
+.title11{
+    padding-left:30px;
+    font-size:20px;
+    text-transform: capitalize;
+}
+
+.par11{
+    padding-left:30px;
+    font-size:20px;
+    text-transform: lowercase;
+}
+.icons_course{
+   color: blue;
+   font-size: 18px;
+   position: absolute;
+   font-weight: bold;
+}
+
+.offer_iteam:after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background:rgb(58, 120, 173);
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.offer_iteam:hover::after{
+    width: 100%;
+    height: 100%;
+} 
+
+/* ---------------------------------------------------------------- */
+
+.iteam_choose{
+    float: left;
+    width: 100%;
+    height: 70vh;
+    background-color:ghostwhite;
+    padding-left:  130px;
+    position: relative;
+    margin-top: 40px;
+}
+.title12{
+    font-size: 50px;
+   
+}
+.par12{
+    text-transform: lowercase;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.draw_line2{
+  width:50px;
+  border-bottom: 2px solid blue;
+ 
+}
+.info_choose{
+    float: left;
+}
+
+.img_choose{
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+img{
+    width: 100%;
+}
+.go4{
+    color: blue;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 20px;
+}
+.parent_choose{
+    position: relative;
+    overflow: auto;
+}
+.bubble ul span li{
+    width: 20px;
+    height: 20px;
+    border-radius: 70%;
+    border: 1px solid black;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 100px;
+}
+.bubble ul span li:hover{
+    background-color: aqua;
+}
+
+.par13{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}  
+
+/* ------------------------------------------------------ */
+
+ .container4{
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 30px;
+ }
+.iteam_info{
+   float: left;
+   width: 25%;
+   height: 250px;
+   text-align: center;
+   background-image: url(../images2/bar6.jpg);
+   background-attachment: fixed;
+   color: #fff;
+   padding-top: 50px;
+   background-size: cover;
+}
+
+.go_icon{
+    font-size: 30px;
+    color: blue;
+}  
+
+/* --------------------------------------------------------- */
+
+.title_pricing{
+    text-align: center;
+   padding-top: 20px;
+}
+.draw_line_service1{
+    width: 50px;
+    border: 1px solid blue;
+    margin: auto;
+   margin-top: 10px;
+   
+}
+
+ .parent_price{
+    overflow: auto;
+    
+}
+
+.iteam_price{
+    float: left;
+    width: 25%;
+    height: 280px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.go_price{
+    margin: 0px 12.5%;
+    margin-top: 50px;
+}
+
+
+.iteam_price h2{
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.draw_circle{
+    width: 30%;
+    height: 30%;
+    border-radius: 60%;
+    border: 1px solid blue;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color:#333;
+    color:aqua;
+
+}
+.p_price{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.my_button3{
+    background-color:#333;
+    color: aqua;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button3{
+    margin-top: 10px
+}
+
+.iteam_price:after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(223, 233, 233);
+    transition: 2s;
+    opacity: 0.7;
+
+}
+
+.iteam_price:hover::after{
+    width: 100%;
+    height: 100%;
+}  
+
+/* ---------------------------------------- */
+
+ .circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.circle img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.iteam_design{
+    float:left;
+    width: 50%;
+    height: 250px;
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-top: 50px;
+    /* color: #fff; */
+    background-image:url(../Images2/bar6.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parent_design{
+ overflow: auto;
+}
+
+
+.iteam_design h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 900;
+     color:#fff;
+    font-weight: bold;
+}
+.iteam_design h3:hover{
+    color: rgb(45, 207, 207);
+}
+
+.iteam_design p{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-style:normal;
+    color: #fff;
+}  
+.iteam_design p:hover{
+    color: rgb(170, 170, 190);
+    font-weight: bold;
+}
+
+/* ----------------------- */
+
+.title20{
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.draw_line_our_team{
+    width: 80px;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.container101{
+    width: 80%;
+    margin: auto;
+}
+.parent_our_team{
+    overflow: auto;
+}
+
+.iteam_ourteam{
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+    background-color: gray;
+    padding: 18px 14px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.new_go{
+    margin: 0px 5%;
+    margin-top: 20px;
+}
+
+.team_img {
+   width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team_img img{
+    width: 100%;
+}
+
+.team_over_lay{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.iteam_ourteam:hover .team_over_lay{
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_over_lay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(44, 155, 155);
+    margin-left: auto;
+    color: #fff;
+}
+
+.team_over_lay a i{
+    line-height: 40px;
+}
+
+.team_info_title{
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:aqua;
+}
+
+
+.team_info_p{
+  text-transform: capitalize;
+  font-size: 25px;
+  color:blue;
+  font-weight: bold;
+
+}
+
+.iteam_ourteam:after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height:0 ;
+
+    top: 0;
+    right: 0;
+    background-color: #333;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.iteam_ourteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+ /* ------------------------------------------------- */
+
+ .title20{
+    margin-top: 60px;
+}
+
+.parent_news_recent{
+    overflow: auto;
+}
+
+.iteam_recent_news{
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.img_recent_nesw{
+   width: 90%;
+   margin: auto;
+}
+
+.img_recent_nesw img{
+    width: 100%;
+}
+
+
+.go_recent{
+    margin: 0px 5%;
+    margin-top: 20px;
+}
+
+.recent_icons{
+    font-size: 22px;
+    color: blue;
+    font-weight: bold;
+}
+
+.recent_title{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.recent_p{
+    font-size: 20px;
+    text-transform: lowercase;
+    font-style: normal;
+}
+
+.recent_info p a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: blue;
+
+}
+
+.iteam_recent_news:after{
+   content: "";
+   position: absolute;
+
+   width:100%;
+   height: 0;
+   top: 0;
+   left: 0;
+   transition: .2s;
+   background-color:#333;
+   opacity: 0;
+} 
+
+
+.iteam_recent_news:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+/* --------------- */
+
+.final_cotainer{
+    margin-top: 100px;
+    background-color: gainsboro;
+    width: 100%;
+    height: 50vh;
+}
+.final_cotainer:hover{
+    background-color: #333;
+}
+
+.final_iteam{
+    text-align: center;
+    margin: auto;
+}
+
+.final_img img{
+ margin-top: 80px;
+}
+
+.final_icons{
+    font-size: 25px;
+    color: blue;
+}
+
+span{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.final_img img{
+    width: 150px;
+    height: 100px;
+}
+.final_p:hover{
+    color: red;
+    font-weight: bold;
+}
